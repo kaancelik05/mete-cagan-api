@@ -8,7 +8,7 @@ import { ApiTags } from '@nestjs/swagger';
 @Controller('login')
 export class LoginController {
 
-  constructor(private loginService: LoginService){}
+  constructor(private loginService: LoginService) {}
 
   @Post()
   async loginUser(@Body() body: UserLoginDto): Promise<UserModel> {
