@@ -32,8 +32,6 @@ export class ImagesAdminController {
   }),
   )
   async uploloadFile(@UploadedFile() file) {
-    // tslint:disable-next-line: no-console
-    console.log(file);
     return await file;
   }
 

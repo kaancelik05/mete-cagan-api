@@ -32,7 +32,6 @@ export class UserController {
   })
   )
   async uploloadFile(@UploadedFile() file) {
-    console.log(file)
     return await file
   }
 

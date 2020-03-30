@@ -57,9 +57,7 @@ export class UserService {
   }
 
   async compareHashes(password, hashed) {
-    console.log(hashed);
     const match = await bcrypt.compareSync(`${hashText}${password}`, hashed);
-    console.log(match)
     return await match;
   }
 }
