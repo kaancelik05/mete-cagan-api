@@ -1,1 +1,1 @@
-web:npm runstart:prod
+web:npm run start:prod
