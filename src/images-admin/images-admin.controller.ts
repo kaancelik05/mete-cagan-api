@@ -31,8 +31,8 @@ export class ImagesAdminController {
     }),
   }),
   )
-  async uploloadFile(@UploadedFile() file) {
-    return await file;
+  async uploadFile(@UploadedFile() file): Promise<any> {
+    return this.imagesService.upload(file);
   }
 
   @Get()
